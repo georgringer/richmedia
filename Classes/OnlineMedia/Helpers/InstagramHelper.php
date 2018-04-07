@@ -12,8 +12,7 @@ class InstagramHelper extends AbstractOEmbedHelper
     protected function getOEmbedUrl($mediaId, $format = 'json')
     {
         return sprintf('https://api.instagram.com/oembed/?url=%s',
-            urlencode(sprintf('http://instagram.com/p/%s/', $mediaId)),
-            rawurlencode($format)
+            urlencode(sprintf('http://instagram.com/p/%s/', $mediaId))
         );
     }
 

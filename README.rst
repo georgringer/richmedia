@@ -1,7 +1,5 @@
-TYPO3 extension ``richmedia``
-=============================
-
-**This extensions alpha and not production ready**
+TYPO3 extension `richmedia`
+===========================
 
 What is it about?
 ^^^^^^^^^^^^^^^^^
@@ -19,7 +17,7 @@ The usage is similiar to the one of the already available media providers like *
 Requirements
 ------------
 
-- TYPO3 CMS ``7.6`` or ``8.x``
+- TYPO3 CMS `8.7` or `9.x`
 - EXT:fluid_styled_content
 - GPL2
 

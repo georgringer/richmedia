@@ -2,17 +2,17 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Richmedia',
-    'description' => 'Richmedia support',
+    'description' => 'Embed rich media item like instagram posts, facebook posts, twitter posting and flickr images by using oembed.',
     'category' => 'frontend',
     'author' => 'Georg Ringer',
     'author_email' => 'mail@ringer.it',
-    'state' => 'alpha',
+    'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '1.0.0',
+    'version' => '2.0.0',
     'constraints' =>
         [
             'depends' => [
-                'typo3' => '7.6.0-8.9.99'
+                'typo3' => '8.7.0-9.3.99'
             ],
             'conflicts' => [],
             'suggests' => [],

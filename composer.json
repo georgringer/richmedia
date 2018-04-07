@@ -1,0 +1,57 @@
+{
+  "name": "georgringer/richmedia",
+  "type": "typo3-cms-extension",
+  "description": "Embed rich media item like instagram posts, facebook posts, twitter posting and flickr images by using oembed.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "rich media",
+    "facebook",
+    "flickr",
+    "twitter",
+    "instagram",
+    "oembed"
+  ],
+  "homepage": "http://ringer.it",
+  "authors": [
+    {
+      "name": "Georg Ringer",
+      "role": "Developer",
+      "homepage": "http://ringer.it"
+    }
+  ],
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "^8.7|| ^9.1"
+  },
+  "conflict": {
+    "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "GeorgRinger\\Richmedia\\": "Classes"
+    }
+  },
+  "replace": {
+    "richmedia": "self.version",
+    "typo3-ter/richmedia": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/richmedia ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/richmedia"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}
